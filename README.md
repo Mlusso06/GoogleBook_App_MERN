@@ -4,7 +4,7 @@ Using MERN - building an App that will search and save books the user is interes
 
 ### [Google Search/Save Books App]( https://wodclickgame.herokuapp.com/)
 
-![WodClick](./readmeImage.jpg)
+![Google Book Search](./client/public/books-icon.png)
 
 ## Getting Started
 
