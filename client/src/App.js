@@ -1,6 +1,6 @@
 // import the componets and pages that I need to use
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./componets/Nav";
 import Saved from "./pages/SavedBooks";
 import Search from "./pages/Search";
@@ -12,9 +12,21 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-       Hello World 
-      </div>
+      <Router>
+        <div className= "container.fluid">
+          <Nav />
+          <Title />
+          <Switch>
+            <Route exact path="/" component={Saved} />
+            <Route exact path="/books" component={Saved} />
+            <Route exact path="/search" component={Search} />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      </Router>
+      // <div className="App">
+      //  Hello World 
+      // </div>
     );
   }
 }
