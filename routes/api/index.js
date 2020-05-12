@@ -1,7 +1,14 @@
 // creating router for my books.js and using the info from it
-const router = require("express").Router();
+ const path = require("path");
+ const router = require("express").Router();
 const bookRoutes = require("./books");
 
 router.use("/books", bookRoutes);
 
+router.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+  });
 module.exports = router;
+
+
+ 

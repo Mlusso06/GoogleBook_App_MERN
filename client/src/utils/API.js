@@ -13,7 +13,8 @@ export default {
     save: function(bookData) {
         console.log("bookData is Below")
         console.log(bookData.title)
-        return axios.post("/api/books", bookData);
+        console.log(bookData)
+        return axios.post("/api", bookData);
 
     },
     //Now you get the books when you click saved books page to get books to render from db

@@ -5,6 +5,7 @@ const booksController = require("../../controllers/booksController");
 router.route("/")
 // on the home page route the findings in a sorted fashion from the controller
 .get(booksController.findAll)
+
 .post(booksController.create);
 
 router.route("/:id")
