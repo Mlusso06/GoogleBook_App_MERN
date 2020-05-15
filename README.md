@@ -2,13 +2,13 @@
 Using MERN - building an App that will search and save books the user is interested in.
 
 
-### [Google Search/Save Books App]( https://wodclickgame.herokuapp.com/)
+### [Google Search/Save Books App]( https://googlebooks1901.herokuapp.com/search)
 
 ![Google Book Search](./client/public/books-icon.png)
 
 ## Getting Started
 
-These instructions will get you a copy of the project [WodClickGame](https://github.com/Mlusso06/Random_Click_Game) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project [Google Book Search App using MERN](https://github.com/Mlusso06/GoogleBook_App_MERN) up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ What things you need:
 Open your Code editing software (example Visual Studio)
 
 Open the "Terminal" in studio
-perform a git clone https://github.com/Mlusso06/Random_Click_Game.git
+perform a git clone  https://github.com/Mlusso06/GoogleBook_App_MERN.git
 ```
 
 ### Installing
@@ -29,14 +29,25 @@ After having the files cloned into your Studio, I would perform a
 * Next you will need to install your code's Dependencies
     * This will capture all the items in your package.json file
 
-See below on how to perfom the install.
+See below on how to perform the install.
 
 ```
 npm i
 ```
-You will be installing the following npm packagages:
+You will be installing the following npm packages on the server package side:
+* axios
+* react-router-dom
+* mongoose
+* dotenv (if you want to hide your info)
+* express
+* if-env
+```
+npm i 
+```
+This one is on the Client folder, Package.json
 * react
 * react-dom
+* react-router-dom
 * react-scripts
 
 ## Available Scripts
@@ -53,15 +64,16 @@ You will also see any lint errors in the console.
 
 you should see the below when it starts
 ```
-Compiled successfully!
+[1] Starting the development server...
+[1]
+[1] Compiled successfully!
+[1]
+[1] You can now view mern in the browser.
+[1]
+[1]   Local:            http://localhost:3000/
+[1]   On Your Network:  http://172.20.34.117:3000/
+[1]
 
-You can now view clickgame in the browser.
-
-  Local:            http://localhost:3000
-  On Your Network:  http://192.168.1.111:3000
-
-Note that the development build is not optimized.
-To create a production build, use yarn build.
 ```
 
 
@@ -80,14 +92,14 @@ We deployed with [Heroku](https://dashboard.heroku.com/apps)
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [Mern Stack documentation](https://medium.com/swlh/how-to-create-your-first-mern-mongodb-express-js-react-js-and-node-js-stack-7e8b20463e66).
 
 
 ## Project Team:
 
 * **Mike Lusso** - *Team Lead* - [Mlusso06](https://github.com/Mlusso06)
 
-## BootCamp Acknolegments 
+## BootCamp Acknowledgments 
 
 This project was part of the Vanderbilt coding Bootcamp - click [Vanderbilt](https://bootcamps.vanderbilt.edu/)  for details and how you can enroll.
 
